@@ -5,11 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Detect OS and change download link
     if (userAgent.includes("android")) {
-        downloadBtn.href = "your-android-apk-link.apk"; // Android APK
+        downloadBtn.href = "https://dorashow.tech/dorashow1_apk.apk"; // Android APK
     } else if (userAgent.includes("iphone") || userAgent.includes("ipad")) {
         downloadBtn.href = "https://apps.apple.com/app"; // iOS App Store (Replace with your link)
     } else {
-        downloadBtn.href = "your-android-apk-link.apk"; // Default to Android
+        downloadBtn.href =  href="https://dorashow.tech/dorashow1_apk.apk";
+ // Default to Android
     }
 
     // Show confirmation before downloading
