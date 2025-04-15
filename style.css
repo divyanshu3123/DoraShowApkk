@@ -25,19 +25,26 @@ body {
 }
 
 .download-btn {
-    background-color: #007bff;
-    color: #121212;
+    background-color: #FF5733;
+    color: white;
+    border: none;
     padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
     text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .download-btn:hover {
-    background-color: #007bff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    
 }
-
+.download-btn:active {
+    transform: scale(0.98);
+}
 /* Features Section */
 .features {
     padding: 50px 20px;
