@@ -1,123 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoraShow - Download Now</title>
-    <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DORASHOW - The Ultimate OTT App</title>
+     <link rel="stylesheet" href="style.css" />
+    <style>
+        /* General Styles */
+        * {margin:0; padding:0; box-sizing:border-box;}
+        html, body {
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            background: #0e0e0e;
+        }
+        section {
+            min-height: 100vh;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+            color: #ff3e00;
+        }
+        p {
+            max-width: 700px;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+        a.button {
+            padding: 15px 35px;
+            background: #ff3e00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s ease;
+        }
+        a.button:hover {
+            background: #e63600;
+        }
+        nav {
+            position: fixed;
+            top:0; left:0;
+            width:100%;
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff3e00;
+        }
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <div class="loader-container">
-        <img src="imagelogo.jpg" alt="Dorashow Loader Logo" class="logo-loader">
-        <h1 class="logo">Dora<span>Show</span>
- </h1>
- <div class="loader"></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#content">Content</a>
+        <a href="#download">Download</a>
+        <a href="#owner">Owner</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+         <img src="image/imagelogo.jpg" alt="DORASHOW Logo" class="logo" />
+        <h1>Welcome to DORASHOW</h1>
+        <p>The ultimate OTT app to watch all types of content in high quality, including 18+ Hindi shows.</p>
+        <a href="#download" class="button">Get Started</a>
+    </section>
+
+    <section id="features">
+    <h2>Why Choose DORASHOW?</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2829/2829077.png" alt="Streaming Icon">
+            <h3>High Quality Streaming</h3>
+            <p>Enjoy movies and shows in full HD & 4K anytime on any device.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/484/484167.png" alt="Languages Icon">
+            <h3>Multi-language Support</h3>
+            <p>Explore content in Hindi, English & many other languages.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" alt="Adult Content Icon">
+            <h3>Adult Categories</h3>
+            <p>Secure 18+ content library, exclusively in Hindi.</p>
+        </div>
     </div>
+</section>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <img src ="imagelogo.jpg" alt="DoraShow Logo " class="Logo">
-        
-            <h1>Stream Your Favorites – Anytime, Anywhere!</h1>
-            <p>Download DoraShow and enjoy seamless streaming of licensed content.</p>
-            <a href="https://github.com/divyanshu3123/DoraShowApkk/releases/download/v1.0.0/dorashowl1_apk.apk" class="download-btn">Download DoraShow Apk</a>
-        </div>
-    </header>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2>Why Choose DoraShow?</h2>
-            <div class="feature-list">
-                <div class="feature-item">
-                    <h3>📺 Smooth Streaming</h3>
-                    <p>No buffering with high-quality streaming.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>✅ Licensed Content</h3>
-                    <p>Legally licensed movies and shows.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>⚡ User-Friendly UI</h3>
-                    <p>Intuitive and engaging interface.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>📥 Offline Viewing</h3>
-                    <p>Download and watch later.</p>
-                </div>
-            </div>
+ <section id="content">
+    <h2>Endless Content Library</h2>
+    <p>From movies to web series, kids shows to 18+ adult entertainment, DORASHOW covers it all in Hindi & other languages.</p>
+    
+    <div class="content-gallery">
+        <div class="content-card">
+            <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Anime Show" />
+            <h3>Anime Series</h3>
         </div>
+        <div class="content-card">
+            <img src="https://images.unsplash.com/photo-1660080494538-bc62fbc6a30d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kids Shows" />
+            <h3>Kids Shows</h3>
+        </div>
+        <div class="content-card">
+            <img src="https://images.unsplash.com/photo-1692553417851-42271c994b50?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="18+ Indian" />
+            <h3>18+ content</h3>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="download">
+        <h2>Download Our APK</h2>
+        <p>Get the latest version of DORASHOW app for Android and start watching now.</p>
+        <a href="https://your-actual-link.com/dorashow.apk" class="button" id="downloadBtn">Download APK</a>
     </section>
 
-    <!-- Screenshots Section -->
-    <section class="screenshots">
-        <div class="container">
-            <h2>App Screenshots</h2>
-            <div class="screenshot-gallery">
-                 <div class="slide">
-                    <img src="imagelogo.jpg" alt="Image One">
-                 </div>
+    <section id="owner">
+    <img src="image/profilepic.jpeg" alt="Owner Logo" class="owner-photo" />
+    <h2>About the Owner</h2>
+       <p>Hello, I'm <strong>Divyanshu Gupta</strong>, the creator of DORASHOW. I hold a degree in <strong>Electrical Engineering</strong> with a minor in <strong>Entrepreneurship and startups</strong>.</p>
+    <p>I'm deeply passionate about <strong>Web Development</strong> and <strong>Android app development</strong>, always exploring new technologies to create innovative digital experiences.</p>
+    <a href="https://instagram.com/yourinstagram" target="_blank" class="insta-icon">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+    </a>
 
-                 <div class="slide">
-                    <img src="aaaimgwebdora2.jpg" alt="Image Two">
-                 </div>
+</section>
 
-                 <div class="slide">
-                    <img src="aaaaimgwebdorashow3.jpg" alt="Image three">
-                 </div>
-
-                 <div class="slide">
-                    <img src="imgwebdora4.webp" alt="Image four">
-                 </div>
-
-                 <div class="slide">
-                    <img src="imgdoraweb5.webp" alt="Image five">
-                 </div>
-
-                 <div class="slide">
-                    <img src="imgdoraweb6.webp" alt="Image six">
-                 </div>
-
-                 <div class="slide">
-                    <img src="imgwebdora7.webp" alt="Image seven">
-                 </div>
-
-                 <div class="slide">
-                    <img src="imgdoraweb8.webp" alt="Image eight">
-                 </div>
-
-                 <div class="slide">
-                    <img src="imgdoraweb9.webp" alt="Image nine">
-                 </div>
-
-               
-                
-
-                
-            </div>
-        </div>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us at support@dorashow.tech</p>
     </section>
 
-    <!-- How to Install -->
-    <section class="install-guide">
-        <div class="container">
-            <h2>How to Install</h2>
-            <ul>
-                <li><strong>Step 1:</strong> Click "Download DOraShow" and install the APK.</li>
-                <li><strong>Step 2:</strong> Allow "Install from Unknown Sources" if prompted.</li>
-                <li><strong>Step 3:</strong> Open the app and start watching!</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        
-        <p>&copy; 2025 DoraShow. All Rights Reserved.</p>
+        &copy; 2025 DORASHOW.tech | All Rights Reserved
     </footer>
-    <script src="scripts.js"></script>
+
+     <script src="scripts.js"></script>
 
 </body>
 </html>
